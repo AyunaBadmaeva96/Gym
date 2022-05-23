@@ -1,0 +1,222 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    max-width: 1141px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 27px;
+}
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 93px;
+}
+.header-logo {
+    display: block;
+    width: 97px;
+    height: 30px;
+    background-image: url(../logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 54px;
+    list-style: none;
+    padding-left: 0;
+}
+.header-nav a {
+    color: #2B3541;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+}
+.header-nav a::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: transparent;
+    display: block;
+    transition: .3s;
+}
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.instagram-logo {
+    display: block;
+    width: 27px;
+    height: 27px;
+    background-image: url(../icons/IN.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: .3s;
+}
+.instagram-logo:hover {
+    width: 38px;
+    height: 38px;
+}
+.facebook-logo {
+    display: block;
+    width: 27px;
+    height: 27px;
+    background-image: url(../icons/FB.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: .3s;
+}
+.facebook-logo:hover {
+    width: 38px;
+    height: 38px;
+}
+.banner {
+    font-family: 'Montserrat', sans-serif;
+}
+.banner-box {
+    color: #2B3541;
+    width: 676px;
+    height: 385px;
+    text-align: left;
+    margin-top: 228px;
+    margin-bottom: 399px;
+}
+.banner-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 125%;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.banner-subtitle {
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.banner-subtitle span {
+    padding-left: 10px;
+}
+.banner-box p {
+    color: #2B3541;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 297px;
+    margin-top: 0;
+    margin-left: 91px;
+    margin-bottom: 60px;
+}
+.banner-link {
+    background-color: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    color: #2B3541;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 91px;
+    padding: 20px 30px;
+    transition: 0.2s;
+}
+.banner-link:hover {
+    background-color: #2B3541;
+    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.2);
+    color: #FBF138;
+}
+.banner-bg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-bg img {
+    position: absolute;
+    width: 996px;
+    height: 852px;
+    top: 158px;
+    margin-left: 330px;
+}
+.banner-bg-right {
+    background: linear-gradient(90deg, #FDF9B6 0%, rgba(253, 249, 182, 0.7) 166.81%);
+    opacity: .2;
+    width: 15.93vw;
+    height: 56.56vw;
+}
+.banner-bg-left {
+    background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
+    opacity: .2;
+    width: 35.93vw;
+    height: 56.56vw;
+}
+.event {}
+.event-box {}
+.event-title {
+    color: #2B3541;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+}
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 20px;
+    margin-bottom: 100px;
+}
+.event-grid_item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 367px;
+    height: 600px;
+    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
+    opacity: 0.3;
+}
+.event-grid_item1 {
+    background-image: url(../files/@1x/maraphon.png);
+}
+.event-grid_item2 {
+    background-image: url(../files/@1x/Vebinar\ 1.png);
+}
+.event-grid_item3 {
+    background-image: url(../files/@1x/Vebinar\ 2.png);
+}
+.event-grid_title {
+    color: #2B3541;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0;
+}
+.event-grid_price {
+    color: #979797;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px 0 20px;
+}
+.event-grid_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: #FBB731;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 32px;
+}
