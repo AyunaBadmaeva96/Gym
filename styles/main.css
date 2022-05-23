@@ -24,7 +24,7 @@ body {
     display: block;
     width: 97px;
     height: 30px;
-    background-image: url(../logo.svg);
+    background-image: url(../icons/logo.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -92,7 +92,7 @@ body {
     width: 676px;
     height: 385px;
     text-align: left;
-    margin-top: 228px;
+    margin-top: 242px;
     margin-bottom: 399px;
 }
 .banner-title {
@@ -100,27 +100,26 @@ body {
     font-size: 48px;
     line-height: 125%;
     text-transform: uppercase;
+    letter-spacing: 0.03em;
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 44px;
 }
 .banner-subtitle {
     font-weight: 400;
     font-size: 40px;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
 }
 .banner-subtitle span {
     padding-left: 10px;
 }
 .banner-box p {
-    color: #2B3541;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 150%;
     max-width: 297px;
     margin-top: 0;
-    margin-left: 91px;
+    margin-left: 93px;
     margin-bottom: 60px;
 }
 .banner-link {
@@ -132,9 +131,10 @@ body {
     line-height: 150%;
     text-decoration: none;
     text-transform: uppercase;
+    text-align: center;
     margin-left: 91px;
     padding: 20px 30px;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 .banner-link:hover {
     background-color: #2B3541;
@@ -143,27 +143,34 @@ body {
 }
 .banner-bg {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    max-width: 790px;
+    gap: 20px;
+    top: 0;
+    left: 107px;
+    z-index: -1;
 }
 .banner-bg img {
     position: absolute;
-    width: 996px;
-    height: 852px;
-    top: 158px;
-    margin-left: 330px;
-}
-.banner-bg-right {
-    background: linear-gradient(90deg, #FDF9B6 0%, rgba(253, 249, 182, 0.7) 166.81%);
-    opacity: .2;
-    width: 15.93vw;
-    height: 56.56vw;
+    width: 986px;
+    height: 810px;
+    top: 159px;
+    margin-left: 326px;
 }
 .banner-bg-left {
     background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
-    opacity: .2;
-    width: 35.93vw;
-    height: 56.56vw;
+    opacity: 0.2;
+    width: 535px;
+    height: 850px;
+    position: static;
+}
+.banner-bg-right {
+    background: linear-gradient(90deg, #FDF9B6 0%, rgba(253, 249, 182, 0.7) 166.81%);
+    opacity: 0.2;
+    flex-basis: 30%;
+    width: 235px;
+    height: 100%;
 }
 .event {}
 .event-box {}
