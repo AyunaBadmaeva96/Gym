@@ -102,7 +102,7 @@ body {
     height: 385px;
     text-align: left;
     margin-top: 242px;
-    margin-bottom: 399px;
+    margin-bottom: 398px;
     margin-left: 1px;
 }
 .banner-title {
@@ -145,7 +145,6 @@ body {
     text-align: center;
     margin-top: 0;
     margin-left: 91px;
-    margin-bottom: 50px;
     padding: 20px 30px;
     transition: 0.3s;
 }
@@ -193,14 +192,19 @@ body {
     width: 235px;
     height: 850px;
 }
-.event {}
-.event-box {}
+.event {
+    
+}
+.event-box {
+
+}
 .event-title {
     color: #2B3541;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 40px;
     line-height: 125%;
+    margin-top: 0;
 }
 .event-grid {
     display: grid;
@@ -208,46 +212,73 @@ body {
     gap: 50px 20px;
     margin-bottom: 100px;
 }
-.event-grid_item {
+.event-grid-item {
     display: flex;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
     width: 367px;
     height: 600px;
     background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
-    opacity: 0.3;
 }
-.event-grid_item1 {
+.event-grid-item1 {
     background-image: url(../files/@1x/maraphon.png);
 }
-.event-grid_item2 {
+.event-grid-item2 {
     background-image: url(../files/@1x/Vebinar\ 1.png);
 }
-.event-grid_item3 {
+.event-grid-item3 {
     background-image: url(../files/@1x/Vebinar\ 2.png);
 }
-.event-grid_title {
+.event-grid-box {
+    margin-left: 30px;
+}
+.event-grid-date {
     color: #2B3541;
-    font-weight: 600;
-    font-size: 30px;
-    margin: 0;
-}
-.event-grid_price {
-    color: #979797;
     font-weight: 700;
-    font-size: 20px;
-    margin: 10px 0 20px;
+    font-size: 18px;
+    opacity: 0.6;
+    margin-top: 36px;
+    margin-bottom: 23px;
 }
-.event-grid_btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    background-color: #FBB731;
+.event-grid-title {
+    color: #2B3541;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+.event-grid-btn {
+    position: absolute;
+    color: transparent;
+    background-color: transparent;
     border: none;
-    border-radius: 5px;
-    padding: 10px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 20px 37px;
 }
+.event-grid-btn:hover {
+    color: #FBF138;
+    background-color: #2B3541;
+}
+.event-grid-type {
+    display: inline-block;
+    color: #2B3541;
+    background: #FBF138;
+    text-align: center;
+    border: none;
+    font-weight: 400;
+    font-size: 18px;
+    width: 122px;
+    padding: 10px 20px;
+}
+/*.event-grid-type:hover {
+    color: transparent;
+    background-color: transparent;
+}*/
 .timetable {
     width: 1143px;
     height: 841px;
